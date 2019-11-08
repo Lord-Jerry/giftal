@@ -118,6 +118,7 @@ const puppeteer = require('puppeteer');
     }
   });
 
+
   await login();
   //await getHomepageLinks();
   //await visitLinks();
