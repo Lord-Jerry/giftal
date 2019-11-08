@@ -3,6 +3,7 @@ const puppeteer = require('puppeteer');
 const http = require('http');
 const port = process.env.PORT || 8080;
 
+// prevent the app from crashing after 60 seconds
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
@@ -28,8 +29,8 @@ server.listen(port, () => {
         timeout: 0,
       });
 
-      await page.type('input#userusername', 'joeswag joshua')
-      await page.type('input#userpassword', 'jayfund190');
+      await page.type('input#userusername', '')
+      await page.type('input#userpassword', '');
       await page.click('input#remember');
       await page.click('input[name="login"]');
       await page.close();
