@@ -1,0 +1,19 @@
+{
+  "name": "commentbot",
+  "version": "1.0.0",
+  "description": "Comment bot for wakanda.ng",
+  "main": "base.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node base.js"
+  },
+  "keywords": ["bot","wakanda"],
+  "author": "Lord Jerry",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^1.9.0"
+  },
+  "engines": {
+    "node": "10.x"
+  }
+}
